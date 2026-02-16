@@ -1,7 +1,9 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://127.0.0.1:8000/api/",
+  // baseURL: "http://127.0.0.1:8000/api/",
+  baseURL:"https://willowy-selma-myself22-adad783f.koyeb.app/api/tasks/",
+
 });
 
 export const getTasks = () => API.get("tasks/");
